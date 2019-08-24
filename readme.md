@@ -1,7 +1,7 @@
 ### insteaDMatic v0.2.0: a DM-Script to collect continuous rotation electron diffraction data
 
 Author: Stef Smeets (2018)  
-URL: www.github.com/stefsmeets/instamatic
+URL: www.github.com/stefsmeets/InsteaDMatic
 
 This script helps with automatic data collection of continuous rotation electron diffraction (cRED) data using DigitalMicrograph. It synchronizes with the 'live view' of the camera, and is therefore independent of the type of camera used. Everytime the frame is updated, the data are copied. The script will wait with data collection until rotation has started, and it will stop data collection when rotation stops. The experiment meta-data and diffraction patterns are automatically saved in a new directory, making it convenient for high-throughput data collection.
 
@@ -10,7 +10,7 @@ The script has been tested succesfully on a Thermo Fisher Themis Z with OneView 
 Thanks to Bin Wang and Maria Roslova for helping with the testing, and Thomas Thersleff for discussions about DM and the idea of using the image clone function.
 The script is loosely based on an example by Dave Mitchell (http://www.dmscripting.com/example_running_a_thread_from_within_a_dialog.html)
 
-![Image of script](../docs/DMscript.PNG)
+![Image of script](./gui.png)
 
 #### How it works:
 
