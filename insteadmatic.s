@@ -1,5 +1,5 @@
 /*
-### insteaDMatic v0.2.0: a DM-Script to collect continuous rotation electron diffraction data
+## insteaDMatic v0.2.0: a DM-Script to collect continuous rotation electron diffraction data
 
 Author: Stef Smeets (2019)  
 URL: www.github.com/stefsmeets/InsteaDMatic
@@ -11,7 +11,13 @@ The script has been tested succesfully on a Thermo Fisher (TFS) Themis Z with On
 Thanks to Bin Wang and Maria Roslova for helping with the testing, and Thomas Thersleff for discussions about DM and the idea of using the image clone function.
 The script is loosely based on an example by Dave Mitchell (http://www.dmscripting.com/example_running_a_thread_from_within_a_dialog.html)
 
-#### How it works:
+### Reference
+
+If you find this software useful, please consider citing the reference below and/or refer to the source code in your publications:
+
+- M. Roslova, S. Smeets, B. Wang, T. Thersleff, H. Xu and X. Zou, [Towards cross-platform automated rotation electron diffraction](https://arxiv.org/abs/1911.09393), arXiv:1911.09393 [cond-mat.mtrl-sci]
+
+### How it works:
 
 The script uses the 'live view' of the camera as a source of data. Every time the frame is updated, DM fires off an event. 
 This scripts waits for this event and then clones the image. These data are equivalent to what can be obtained using the 'Record' function.
@@ -32,7 +38,7 @@ Make sure to set up the rotation axis (defined as the angle between the horizont
 Use `instamatic/scripts/process_dm.py` to convert the data to formats compatible with XDS/DIALS/REDp/PETS
 (www.github.com/stefsmeets/instamatic)
 
-#### Usage instructions:
+### Usage instructions:
 1. Insert the camera in view mode (for Oneview, use 'In-situ Acquisition')
    - Set the exposure (i.e. 0.3 s) and press 'View'
    - For Oneview, set the diffraction mode for the acquisition (Click 'D')
@@ -48,7 +54,7 @@ Use `instamatic/scripts/process_dm.py` to convert the data to formats compatible
    - Images are stored in `.tiff` format in the `tiff` subdirectory
    - use `python instamatic/scripts/process_dm.py cRED_log.txt` to for data conversion
 
-#### TFS only:
+### TFS only:
 If you are running on a TFS machine, you can control the rotation and speed of rotation directly from `InsteaDMatic`.
 To do so, [instamatic](https://github.com/stefsmeets/instamatic) should be installed on the microscope computer. The communication is done through a utility called `netcat` (available from (available from https://joncraton.org/blog/46/netcat-for-windows/))
 
