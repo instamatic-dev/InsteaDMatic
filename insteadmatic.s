@@ -348,6 +348,12 @@ Class Dialog_UI : UIFrame
         
         while ( angle_delta < angle_activation_threshold )
         {
+            if ( !loop )
+            {
+                self.end_collection()
+                self.SetStatus("Aborted.")                
+                return
+            }
             sleep(0.1)  // sleep to prevent request spam (can cause dm to crash)
             start_angle = EMGetStageAlpha()
             angle_delta = abs(start_angle - angle0)
