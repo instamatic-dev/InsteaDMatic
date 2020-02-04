@@ -57,7 +57,7 @@ Use `instamatic/scripts/process_dm.py` to convert the data to formats compatible
 
 ### TFS only:
 If you are running on a TFS machine, you can control the rotation and speed of rotation directly from `InsteaDMatic`.
-To do so, [instamatic](https://github.com/stefsmeets/instamatic) should be installed on the microscope computer. The communication is done through a utility called `netcat` (available from (available from https://joncraton.org/blog/46/netcat-for-windows/))
+To do so, [instamatic](https://github.com/stefsmeets/instamatic) should be installed on the microscope computer. The communication is done through a utility called `netcat` (available from https://joncraton.org/blog/46/netcat-for-windows/)
 
 - Set the `use_temserver` toggle to `true` in the script
 - Make sure you have run `instamatic.temserver_fei` on the microscope computer
