@@ -3,9 +3,6 @@
 ![Press start to continue...](./cover.png)
 (Credits to Maria Roslova)
 
-Author: Stef Smeets (2019)  
-URL: www.github.com/stefsmeets/InsteaDMatic
-
 This script helps with automatic data collection of continuous rotation electron diffraction (cRED) data using DigitalMicrograph. It synchronizes with the 'live view' of the camera, and is therefore independent of the type of camera used. Everytime the frame is updated, the data are copied. The script will wait with data collection until rotation has started, and it will stop data collection when rotation stops. The experiment meta-data and diffraction patterns are automatically saved in a new directory, making it convenient for high-throughput data collection.
 
 The script has been tested succesfully on a Thermo Fisher (TFS) Themis Z with OneView camera and a JEOL JEM-2100 with an Orius camera.
