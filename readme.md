@@ -1,5 +1,8 @@
 ## insteaDMatic v0.2.0: a DM-Script to collect continuous rotation electron diffraction data
 
+![Press start to continue...](./cover.png)
+(Credits to Maria Roslova)
+
 Author: Stef Smeets (2019)  
 URL: www.github.com/stefsmeets/InsteaDMatic
 
