@@ -15,7 +15,8 @@ The script is loosely based on an example by Dave Mitchell (http://www.dmscripti
 
 If you find this software useful, please consider citing the reference below and/or refer to the source code in your publications:
 
-- M. Roslova, S. Smeets, B. Wang, T. Thersleff, H. Xu and X. Zou, [Towards cross-platform automated rotation electron diffraction](https://arxiv.org/abs/1911.09393), arXiv:1911.09393 [cond-mat.mtrl-sci]
+- M. Roslova, S. Smeets, B. Wang, T. Thersleff, H. Xu and X. Zou, [InsteaDMatic: towards cross-platform automated continuous rotation electron diffraction](https://doi.org/10.1107/S1600576720009590), J. Appl. Crystallogr., 2020
+
 
 ### How it works:
 
