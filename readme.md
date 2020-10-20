@@ -34,10 +34,10 @@ Press `<Stop>` to interrupt data collection. It is also possible to interrupt th
 
 The work directory and experiment name define where the data are saved. The experiment number is updated automatically so that data are never overwritten.
 
-Make sure to set up the rotation axis (defined as the angle between the horizontal and the position of the rotation axis). The variable is defined as `calibrated_rotation_angle` at the top of the script. It can be calculated using `edtools.find_rotation_axis` available [here](https://github.com/stefsmeets/edtools#find_rotation_axispy) or PETS.
+Make sure to set up the rotation axis (defined as the angle between the horizontal and the position of the rotation axis). The variable is defined as `calibrated_rotation_angle` at the top of the script. It can be calculated using `edtools.find_rotation_axis` available [here](https://github.com/instamatic-dev/edtools#find_rotation_axispy) or PETS.
 
 Use `instamatic/scripts/process_dm.py` to convert the data to formats compatible with XDS/DIALS/REDp/PETS
-(www.github.com/stefsmeets/instamatic)
+(www.github.com/instamatic-dev/instamatic)
 
 ### Usage instructions:
 1. Insert the camera in view mode (for Oneview, use 'In-situ Acquisition')
@@ -57,7 +57,7 @@ Use `instamatic/scripts/process_dm.py` to convert the data to formats compatible
 
 ### TFS only:
 If you are running on a TFS machine, you can control the rotation and speed of rotation directly from `InsteaDMatic`.
-To do so, [instamatic](https://github.com/stefsmeets/instamatic) should be installed on the microscope computer. The communication is done through a utility called `netcat` (available from https://joncraton.org/blog/46/netcat-for-windows/)
+To do so, [instamatic](https://github.com/instamatic-dev/instamatic) should be installed on the microscope computer. The communication is done through a utility called `netcat` (available from https://joncraton.org/blog/46/netcat-for-windows/)
 
 - Set the `use_temserver` toggle to `true` in the script
 - Make sure you have run `instamatic.temserver_fei` on the microscope computer

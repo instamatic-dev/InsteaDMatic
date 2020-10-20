@@ -2,7 +2,7 @@
 ## insteaDMatic v0.2.0: a DM-Script to collect continuous rotation electron diffraction data
 
 Author: Stef Smeets (2019)  
-URL: www.github.com/stefsmeets/InsteaDMatic
+URL: www.github.com/instamatic-dev/InsteaDMatic
 
 This script helps with automatic data collection of continuous rotation electron diffraction (cRED) data using DigitalMicrograph. It synchronizes with the 'live view' of the camera, and is therefore independent of the type of camera used. Everytime the frame is updated, the data are copied. The script will wait with data collection until rotation has started, and it will stop data collection when rotation stops. The experiment meta-data and diffraction patterns are automatically saved in a new directory, making it convenient for high-throughput data collection.
 
@@ -34,10 +34,10 @@ Press `<Stop>` to interrupt data collection. It is also possible to interrupt th
 
 The work directory and experiment name define where the data are saved. The experiment number is updated automatically so that data are never overwritten.
 
-Make sure to set up the rotation axis (defined as the angle between the horizontal and the position of the rotation axis). The variable is defined as `calibrated_rotation_angle` at the top of the script. It can be calculated using `edtools.find_rotation_axis` available [here](https://github.com/stefsmeets/edtools#find_rotation_axispy) or PETS.
+Make sure to set up the rotation axis (defined as the angle between the horizontal and the position of the rotation axis). The variable is defined as `calibrated_rotation_angle` at the top of the script. It can be calculated using `edtools.find_rotation_axis` available [here](https://github.com/instamatic-dev/edtools#find_rotation_axispy) or PETS.
 
 Use `instamatic/scripts/process_dm.py` to convert the data to formats compatible with XDS/DIALS/REDp/PETS
-(www.github.com/stefsmeets/instamatic)
+(www.github.com/instamatic-dev/instamatic)
 
 ### Usage instructions:
 1. Insert the camera in view mode (for Oneview, use 'In-situ Acquisition')
@@ -57,7 +57,7 @@ Use `instamatic/scripts/process_dm.py` to convert the data to formats compatible
 
 ### TFS only:
 If you are running on a TFS machine, you can control the rotation and speed of rotation directly from `InsteaDMatic`.
-To do so, [instamatic](https://github.com/stefsmeets/instamatic) should be installed on the microscope computer. The communication is done through a utility called `netcat` (available from https://joncraton.org/blog/46/netcat-for-windows/)
+To do so, [instamatic](https://github.com/instamatic-dev/instamatic) should be installed on the microscope computer. The communication is done through a utility called `netcat` (available from https://joncraton.org/blog/46/netcat-for-windows/)
 
 - Set the `use_temserver` toggle to `true` in the script
 - Make sure you have run `instamatic.temserver_fei` on the microscope computer
